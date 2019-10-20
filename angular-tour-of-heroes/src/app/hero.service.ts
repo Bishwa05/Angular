@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-<<<<<<< HEAD
 import { Hero } from './hero';
 import { HEROES } from './mock-heroes';
 import { Observable, of } from 'rxjs';
@@ -11,14 +10,10 @@ import { catchError, map, tap } from 'rxjs/operators';
 // the same way the @Component() decorator did for your component classes.
 
 // This marks the class as one that participates in the dependency injection system.
-=======
-
->>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
 @Injectable({
   providedIn: 'root'
 })
 export class HeroService {
-<<<<<<< HEAD
   private heroesUrl = 'api/heroes';  // URL to web api
 
   constructor(private http: HttpClient,
@@ -120,8 +115,4 @@ private handleError<T> (operation = 'operation', result?: T) {
     return of(result as T);
   };
 }
-=======
-
-  constructor() { }
->>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
 }
