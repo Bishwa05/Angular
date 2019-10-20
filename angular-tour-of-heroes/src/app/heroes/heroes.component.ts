@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';
-<<<<<<< HEAD
 // import { HEROES } from '../mock-heroes';
 import { HeroService } from '../hero.service';
-=======
-import { HEROES } from '../mock-heroes';
->>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
 
 @Component({
   selector: 'app-heroes',
@@ -15,7 +11,6 @@ import { HEROES } from '../mock-heroes';
 export class HeroesComponent implements OnInit {
 
   //hero = 'Windstorm';
-<<<<<<< HEAD
   //heroes = HEROES;
   heroes: Hero[];
 
@@ -54,18 +49,6 @@ export class HeroesComponent implements OnInit {
   delete(hero: Hero): void {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero).subscribe();
-=======
-  heroes = HEROES;
-
-  selectedHero: Hero;
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
-
-  constructor() { }
-
-  ngOnInit() {
->>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
   }
 
 }
