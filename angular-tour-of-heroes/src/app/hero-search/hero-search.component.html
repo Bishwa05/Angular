@@ -1,0 +1,13 @@
+<div id="search-component">
+  <h4><label for="search-box">Hero Search</label></h4>
+<!-- You can also push values into that Observable by calling its next(value) method as the search() method does. -->
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+<!-- The $ is a convention that indicates heroes$ is an Observable, not an array. -->
+  <ul class="search-result">
+    <li *ngFor="let hero of heroes$ | async" >
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name}}
+      </a>
+    </li>
+  </ul>
+</div>
