@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+<<<<<<< HEAD
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -16,11 +17,14 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
 // Remove it when a real server is ready to receive requests.
+=======
+>>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
+<<<<<<< HEAD
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
@@ -34,6 +38,13 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     )
+=======
+    HeroDetailComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
+>>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
   ],
   providers: [],
   bootstrap: [AppComponent]

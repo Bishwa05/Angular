@@ -1,13 +1,18 @@
 import { Component, OnInit, Input } from '@angular/core';
+<<<<<<< HEAD
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Hero }         from '../hero';
 import { HeroService }  from '../hero.service';
+=======
+import { Hero } from '../hero';
+>>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
 
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
+<<<<<<< HEAD
   styleUrls: [ './hero-detail.component.css' ]
 })
 export class HeroDetailComponent implements OnInit {
@@ -38,3 +43,17 @@ export class HeroDetailComponent implements OnInit {
       .subscribe(() => this.goBack());
   }
 }
+=======
+  styleUrls: ['./hero-detail.component.css']
+})
+export class HeroDetailComponent implements OnInit {
+
+  @Input() hero: Hero;
+  
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+>>>>>>> 679ae1a1389f9aa461af990cb327e70dd84f5a85
